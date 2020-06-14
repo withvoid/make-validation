@@ -11,3 +11,5 @@ CODE_OF_CONDUCT.md
 prettier.config.js
 package-lock.lock
 yarn.lock
+
+public
