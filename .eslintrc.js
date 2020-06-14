@@ -7,7 +7,7 @@ module.exports = {
   extends: ['airbnb', 'prettier'],
   plugins: ['prettier'],
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 8,
   },
   rules: {
     'linebreak-style': 'off', // Don't play nicely with Windows.
