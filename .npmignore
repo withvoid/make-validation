@@ -1,0 +1,13 @@
+.cache/
+.github/
+.vscode/
+
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+
+.gitattributes
+.editorconfig
+.eslintrc.js
+prettier.config.js
+package-lock.lock
+yarn.lock
