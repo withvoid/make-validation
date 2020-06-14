@@ -1,5 +1,5 @@
 {
-  "name": "make-validation",
+  "name": "@withvoid/make-validation",
   "version": "1.0.0",
   "description": "validation library to validate user request in API",
   "main": "lib/index.js",
