@@ -8,6 +8,7 @@ npm i @withvoid/make-validation --save
 
 ## Usage
 
+```js
 const makeValidation = require('@withvoid/make-validation')
 
 const result = makeValidation((types) => {
@@ -18,6 +19,7 @@ const result = makeValidation((types) => {
 });
 
 console.log('result', result.success, result.message, result.errors);
+```
 
 ## Examples
 
