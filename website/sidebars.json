@@ -1,0 +1,11 @@
+{
+  "docs": {
+    "Getting Started": ["getting-started/intro", "getting-started/install"],
+    "API": [
+      "api/array",
+      "api/enum",
+      "api/string"
+    ],
+    "Example": ["examples/express-example"]
+  }
+}
