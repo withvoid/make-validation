@@ -1,5 +1,7 @@
 # make-validation
 
+Documentation https://make-validation.netlify.app/
+
 ## Install
 
 ```
@@ -9,7 +11,7 @@ npm i @withvoid/make-validation --save
 ## Usage
 
 ```js
-const makeValidation = require('@withvoid/make-validation')
+const makeValidation = require('@withvoid/make-validation');
 
 const result = makeValidation((types) => {
   return {
@@ -33,31 +35,31 @@ projects for example.
 
 See the code version example [here](example/express-example.js)
 
-![express-example example](public/express-example.png?raw=true "express-example example")
+![express-example example](public/express-example.png?raw=true 'express-example example')
 
 ## Api
 
 ### callback
 
 ```js
-const validation = makeValidation(types => {});
+const validation = makeValidation((types) => {});
 ```
 
-makeValidation method returns a callback, the callback has all the valid
-types of validations available.
+makeValidation method returns a callback, the callback has all the valid types
+of validations available.
 
-![callback example](public/callback.png?raw=true "callback example")
+![callback example](public/callback.png?raw=true 'callback example')
 
 ### payload
 
 ```js
-const validation = makeValidation(types => {
+const validation = makeValidation((types) => {
   return {
     payload: {
       firstName: 'john',
-      lastname: 'doe'
-    }
-  }
+      lastname: 'doe',
+    },
+  };
 });
 ```
 
@@ -87,20 +89,20 @@ For every check type there are some options available.
 #### types.string
 
 - `options.empty` (default `false`) will check if the string is allowed to be
-    empty `''` or not.
+  empty `''` or not.
 
 #### types.array
 
 - `options.unique` (default `false`) will check if the array is unique or not
 - `options.stringOnly` (default `false`) will check if the all the values in
-    array are strings or not
+  array are strings or not
 - `options.empty` (default `true`) will check if the array is empty allowed or
-    not
+  not
 
 #### types.enum
 
 - `options.enum` (default `{}`, required: yes) It can be of 2 types string and
-    object.
+  object.
 
 ```js
 checks: {
@@ -116,4 +118,3 @@ checks: {
 
 - If `options.enum` a `string` the enum is seperated by space.
 - If `options.enum` an `object` the enum are the values in the objects.
-

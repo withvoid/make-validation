@@ -28,6 +28,10 @@
       "getting-started/intro": {
         "title": "Introduction",
         "sidebar_label": "Introduction"
+      },
+      "useful-links/youtube-videos": {
+        "title": "Youtube Videos",
+        "sidebar_label": "Youtube Videos"
       }
     },
     "links": {
@@ -38,7 +42,8 @@
     "categories": {
       "Getting Started": "Getting Started",
       "API": "API",
-      "Example": "Example"
+      "Example": "Example",
+      "Useful Links": "Useful Links"
     }
   },
   "pages-strings": {

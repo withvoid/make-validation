@@ -10,9 +10,9 @@ Array validations can be done with the following options
 
 - `options.unique` (default `false`) will check if the array is unique or not
 - `options.stringOnly` (default `false`) will check if the all the values in
-    array are strings or not
+  array are strings or not
 - `options.empty` (default `true`) will check if the array is empty allowed or
-    not
+  not
 
 ## Example
 

@@ -13,7 +13,7 @@ npm i @withvoid/make-validation --save
 ## Usage
 
 ```js
-const makeValidation = require('@withvoid/make-validation')
+const makeValidation = require('@withvoid/make-validation');
 
 const result = makeValidation((types) => {
   return {

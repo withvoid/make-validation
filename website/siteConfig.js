@@ -23,7 +23,7 @@ const users = [
 const siteConfig = {
   title: 'Make Validation', // Title for your website.
   tagline: 'Simple validation for your Node backend API',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
+  url: 'https://make-validation.netlify.app/', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -105,7 +105,7 @@ const siteConfig = {
   // template. For example, if you need your repo's URL...
   repoUrl: 'https://github.com/withvoid/make-validation',
   // twitter details
-  twitterUsername: 'adeelibr'
+  twitterUsername: 'adeelibr',
 };
 
 module.exports = siteConfig;

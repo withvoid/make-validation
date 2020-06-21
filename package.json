@@ -7,9 +7,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "lint": "eslint --debug ./",
-    "lint:write": "eslint --debug ./ --fix",
-    "prettier": "prettier --write ./**/*.{js,md}"
+    "lint": "eslint ./",
+    "lint:write": "eslint ./ --fix",
+    "prettier": "prettier --write ."
   },
   "repository": {
     "type": "git",
