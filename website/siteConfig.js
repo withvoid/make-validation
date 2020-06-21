@@ -105,7 +105,7 @@ const siteConfig = {
   // template. For example, if you need your repo's URL...
   repoUrl: 'https://github.com/withvoid/make-validation',
   // twitter details
-  twitterUsername: 'adeelibr'
+  twitterUsername: 'adeelibr',
 };
 
 module.exports = siteConfig;

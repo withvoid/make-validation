@@ -9,7 +9,7 @@ Enum validation can be done with the following options
 ## Options
 
 - `options.enum` (default `{}`, required: `yes`) It can be of 2 types string and
-    object.
+  object.
 
 ```js
 checks: {
@@ -56,4 +56,3 @@ const result = makeValidation((types) => {
   };
 });
 ```
-
