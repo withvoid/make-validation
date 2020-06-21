@@ -15,13 +15,13 @@ const GridBlock = CompLibrary.GridBlock;
 
 class HomeSplash extends React.Component {
   render() {
-    const {siteConfig, language = ''} = this.props;
-    const {baseUrl, docsUrl} = siteConfig;
+    const { siteConfig, language = '' } = this.props;
+    const { baseUrl, docsUrl } = siteConfig;
     const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
     const langPart = `${language ? `${language}/` : ''}`;
-    const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
+    const docUrl = (doc) => `${baseUrl}${docsPart}${langPart}${doc}`;
 
-    const SplashContainer = props => (
+    const SplashContainer = (props) => (
       <div className="homeContainer">
         <div className="homeSplashFade">
           <div className="wrapper homeWrapper">{props.children}</div>
@@ -29,14 +29,14 @@ class HomeSplash extends React.Component {
       </div>
     );
 
-    const ProjectTitle = props => (
+    const ProjectTitle = (props) => (
       <h2 className="projectTitle">
         {props.title}
         <small>{props.tagline}</small>
       </h2>
     );
 
-    const PromoSection = props => (
+    const PromoSection = (props) => (
       <div className="section promoSection">
         <div className="promoRow">
           <div className="pluginRowBlock">{props.children}</div>
@@ -44,7 +44,7 @@ class HomeSplash extends React.Component {
       </div>
     );
 
-    const Button = props => (
+    const Button = (props) => (
       <div className="pluginWrapper buttonWrapper">
         <a className="button" href={props.href} target={props.target}>
           {props.children}
@@ -58,7 +58,9 @@ class HomeSplash extends React.Component {
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
             <Button href={docUrl('getting-started/install')}>Install</Button>
-            <Button href={docUrl('examples/express-example')}>Example ExpressJS</Button>
+            <Button href={docUrl('examples/express-example')}>
+              Example ExpressJS
+            </Button>
             <Button
               href="https://npm.runkit.com/%40withvoid%2Fmake-validation"
               target="_blank"
@@ -74,14 +76,15 @@ class HomeSplash extends React.Component {
 
 class Index extends React.Component {
   render() {
-    const {config: siteConfig, language = ''} = this.props;
-    const {baseUrl} = siteConfig;
+    const { config: siteConfig, language = '' } = this.props;
+    const { baseUrl } = siteConfig;
 
-    const Block = props => (
+    const Block = (props) => (
       <Container
         padding={['bottom', 'top']}
         id={props.id}
-        background={props.background}>
+        background={props.background}
+      >
         <GridBlock
           align="center"
           contents={props.children}
@@ -115,14 +118,15 @@ class Index extends React.Component {
       }
 
       const showcase = siteConfig.users
-        .filter(user => user.pinned)
-        .map(user => (
+        .filter((user) => user.pinned)
+        .map((user) => (
           <a href={user.infoLink} key={user.infoLink}>
             <img src={user.image} alt={user.caption} title={user.caption} />
           </a>
         ));
 
-      const pageUrl = page => baseUrl + (language ? `${language}/` : '') + page;
+      const pageUrl = (page) =>
+        baseUrl + (language ? `${language}/` : '') + page;
 
       return (
         <div className="productShowcaseSection paddingBottom">

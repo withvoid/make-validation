@@ -37,15 +37,9 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('getting-started/intro')}>
-              Getting Started
-            </a>
-            <a href={this.docUrl('api/array')}>
-              API Reference
-            </a>
-            <a href={this.docUrl('examples/express-example')}>
-              Examples
-            </a>
+            <a href={this.docUrl('getting-started/intro')}>Getting Started</a>
+            <a href={this.docUrl('api/array')}>API Reference</a>
+            <a href={this.docUrl('examples/express-example')}>Examples</a>
           </div>
           <div>
             <h5>Community</h5>
@@ -55,13 +49,15 @@ class Footer extends React.Component {
             <a
               href="https://stackoverflow.com/questions/tagged/make-validation"
               target="_blank"
-              rel="noreferrer noopener">
+              rel="noreferrer noopener"
+            >
               Stack Overflow
             </a>
             <a
               href="https://twitter.com/adeelibr"
               target="_blank"
-              rel="noreferrer noopener">
+              rel="noreferrer noopener"
+            >
               Twitter
             </a>
           </div>
@@ -76,14 +72,16 @@ class Footer extends React.Component {
               data-count-href="/facebook/docusaurus/stargazers"
               data-show-count="true"
               data-count-aria-label="# stargazers on GitHub"
-              aria-label="Star this project on GitHub">
+              aria-label="Star this project on GitHub"
+            >
               Star
             </a>
             {this.props.config.twitterUsername && (
               <div className="social">
                 <a
                   href={`https://twitter.com/${this.props.config.twitterUsername}`}
-                  className="twitter-follow-button">
+                  className="twitter-follow-button"
+                >
                   Follow @{this.props.config.twitterUsername}
                 </a>
               </div>

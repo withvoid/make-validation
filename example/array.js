@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars, no-console */
 const makeValidation = require('../lib');
 
 const result = makeValidation((types) => {

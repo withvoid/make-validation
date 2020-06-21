@@ -9,7 +9,7 @@ String validation can be done with the following options
 ## Options
 
 - `options.empty` (default `false`) will check if the string is allowed to be
-    empty `''` or not.
+  empty `''` or not.
 
 ## Example
 
@@ -31,4 +31,3 @@ const result = makeValidation((types) => {
   };
 });
 ```
-

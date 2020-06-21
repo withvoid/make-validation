@@ -13,16 +13,16 @@ const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
 function Help(props) {
-  const {config: siteConfig, language = ''} = props;
-  const {baseUrl, docsUrl} = siteConfig;
+  const { config: siteConfig, language = '' } = props;
+  const { baseUrl, docsUrl } = siteConfig;
   const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
   const langPart = `${language ? `${language}/` : ''}`;
-  const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
+  const docUrl = (doc) => `${baseUrl}${docsPart}${langPart}${doc}`;
 
   const supportLinks = [
     {
       content: `Learn more using the [documentation on this site.](${docUrl(
-        'getting-started/intro',
+        'getting-started/intro'
       )})`,
       title: 'Browse Docs',
     },
@@ -43,7 +43,12 @@ function Help(props) {
           <header className="postHeader">
             <h1>Need help?</h1>
           </header>
-          <p>This project is maintained by <a href="https://twitter.com/adeelibr" target="_blank">Adeel Imran.</a></p>
+          <p>
+            This project is maintained by{' '}
+            <a href="https://twitter.com/adeelibr" target="_blank">
+              Adeel Imran.
+            </a>
+          </p>
           <GridBlock contents={supportLinks} layout="threeColumn" />
         </div>
       </Container>
