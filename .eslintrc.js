@@ -4,8 +4,8 @@ module.exports = {
     browser: true,
     node: true,
   },
-  extends: ['airbnb', 'prettier'],
-  plugins: ['prettier'],
+  extends: ['airbnb-base', 'prettier'], // eslint-config-prettier
+  plugins: ['prettier'], // eslint-plugin-prettier
   parserOptions: {
     ecmaVersion: 8,
   },
