@@ -1,4 +1,14 @@
-/* eslint-disable */
+---
+id: express-example
+title: ExpressJS Example
+sidebar_label: ExpressJS Example
+---
+
+Validation can be used like the following in ExpressJS
+
+## Example
+
+```js
 import express from 'express';
 
 const router = express.Router();
@@ -28,3 +38,4 @@ router.post('/get-users', async (req, res) => {
 });
 
 export default router;
+```
